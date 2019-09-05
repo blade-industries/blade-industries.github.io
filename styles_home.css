@@ -1,0 +1,32 @@
+div.folder-link {
+    position: relative;
+    padding: 8px 16px 8px 0px;
+    float: left;
+
+    width: 200;
+    height: 120;
+    background: url("img/folder_white_sq.png") no-repeat;
+
+    color: #000000;
+}
+
+div.folder-link:hover {
+    background: url("img/folder_blue_sq.png") no-repeat;
+    color: #FFFFFF;
+}
+
+
+.folder-link h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.5em;
+    position: absolute;
+    bottom: 32px;
+    left: 16px;
+}
+
+.folder-link img {
+    width: 200;
+    height: 120;
+}
+
