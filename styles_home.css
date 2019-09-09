@@ -15,6 +15,9 @@ div.folder-link:hover {
     color: #FFFFFF;
 }
 
+.selector {
+    padding-top: 16px;
+}
 
 .folder-link h3 {
     margin: 0;
