@@ -6,13 +6,23 @@ html {
     height: 100%;
 }
 
+@font-face {
+    font-family: 'MS Gothic';
+    src: url('MS-Gothic.eot');
+    src: local('MS Gothic'), local('MS-Gothic'),
+        url('MS-Gothic.eot?#iefix') format('embedded-opentype'),
+        url('MS-Gothic.woff2') format('woff2'),
+        url('MS-Gothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 body {
     background-color: #000000;
     color: #FFFFFF;
     text-shadow: 0 0 2px #C8C8C8;
 
-    font-family: 'source code pro', monospace;
+    font-family: 'ms gothic', monospace;
     text-align: justify;
     font-size: 1em;
     line-height: 1.5;
@@ -115,7 +125,6 @@ footer {
 
 h1,h2,h3,h4,h5,h6 {
     font-size: 1em;
-    font-weight: 600;
     text-transform: uppercase;
 }
 
@@ -157,8 +166,4 @@ h2 {
 
     padding: 0;
     margin-top: 16px;
-}
-
-p,a {
-    font-weight: 400;
 }
