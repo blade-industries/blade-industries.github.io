@@ -21,7 +21,6 @@ html {
 body {
     background-color: #000000;
     color: #FFFFFF;
-    text-shadow: 0 0 2px #C8C8C8;
 
     font-family: 'ms gothic', monospace;
     text-align: justify;
@@ -141,7 +140,6 @@ div.introduction p {
     border-style: solid;
     border-width: 1px;
     border-color: #FFFFFF;
-    box-shadow: 0 0 2px #C8C8C8;
     
     padding: 16px;
     padding-bottom: 4px:
@@ -167,7 +165,6 @@ div.spacer {
 h2 {
     background-color: #FFFFFF;
     color: #000000;
-    box-shadow: 0 0 2px #C8C8C8;
 
     padding: 0;
     margin-top: 16px;
