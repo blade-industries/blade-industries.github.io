@@ -170,12 +170,9 @@ h2 {
     position: relative;
     top: -0.2em;
     color: #000000;
-
-    padding: 0px 0px 16px 0px;
 }
 
 .header-block {
     height: 0.95em;
     background-color: #FFFFFF;
-    margin-bottom: 16px;
 }
