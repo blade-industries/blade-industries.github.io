@@ -1,0 +1,100 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v0.9.36",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "station"
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Cube.006",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2
+                    },
+                    "indices" : 3
+                }
+            ]
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 40,
+            "max" : [
+                -15.317780494689941,
+                39.310768127441406,
+                -0.1951974630355835
+            ],
+            "min" : [
+                -22.048349380493164,
+                28.126379013061523,
+                -9.622855186462402
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 40,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 40,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5123,
+            "count" : 60,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 480,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 480,
+            "byteOffset" : 480
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 320,
+            "byteOffset" : 960
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 120,
+            "byteOffset" : 1280
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 1400,
+            "uri" : "data:application/octet-stream;base64,BWOwwTo+HULI0Ty/td6pwQ4B+EE39xnBBWOwwQ4B+EHI0Ty/td6pwTo+HUI39xnBtd6pwTo+HUI39xnBoRV1wQ4B+EGiSRHBtd6pwQ4B+EE39xnBoRV1wTo+HUKiSRHBoRV1wTo+HUKiSRHBIQ+BwQ4B+EHY4Ue+oRV1wQ4B+EGiSRHBIQ+BwTo+HULY4Ue+IQ+BwTo+HULY4Ue+BWOwwQ4B+EHI0Ty/IQ+BwQ4B+EHY4Ue+BWOwwTo+HULI0Ty/oRV1wQ4B+EGiSRHBBWOwwQ4B+EHI0Ty/td6pwQ4B+EE39xnBIQ+BwQ4B+EHY4Ue+8gajwR6Y+UGQAzrAU/auwUZn4kG94SnA7K2uwUZn4kFoj0LAWU+jwR6Y+UHkVSHAIkqBwZH8+kH6JS6/iJKBwdMC4UGg3pa+IkqBwdMC4UH6JS6/iJKBwZH8+kGg3pa+V2R8wZH8+kHkvZzAJPV8wdMC4UEOZ5DAV2R8wdMC4UHkvZzAJPV8wZH8+kEOZ5DAzGB2wZH8+kFk9w/BmvF2wdMC4UH5ywnBzGB2wdMC4UFk9w/BmvF2wZH8+kH5ywnBjCKnwUZn4kFclQnBs86cwR6Y+UEy6vnAOAWowUZn4kF9pQPBB+ybwR6Y+UH45ALBTe5+vwAAAAAv+rq9Te5+vwAAAAAv+rq9Te5+vwAAAAAv+rq9Te5+vwAAAAAv+rq9Pfq6PQAAAABN7n6/Pfq6PQAAAABN7n6/Pfq6PQAAAABN7n6/Pfq6PQAAAABN7n6/TO5+PwAAAAA7+ro9TO5+PwAAAAA7+ro9TO5+PwAAAAA7+ro9TO5+PwAAAAA7+ro9Qvq6vQAAAABM7n4/Qvq6vQAAAABM7n4/Qvq6vQAAAABM7n4/Qvq6vQAAAABM7n4/AAAAAP//f78AAACAAAAAAP//f78AAACAAAAAAP//f78AAACAAAAAAP//f78AAACAu5ljP5Oj5r6R76Y9u5ljP5Oj5r6R76Y9u5ljP5Oj5r6R76Y9u5ljP5Oj5r6R76Y9Ue5+PwAAAACp+Lo9Ue5+PwAAAACp+Lo9Ue5+PwAAAACp+Lo9Ue5+PwAAAACp+Lo9Tu5+PwAAAADn+bo9Tu5+PwAAAADn+bo9Tu5+PwAAAADn+bo9Tu5+PwAAAADn+bo9Se5+PwAAAAAt+7o9Se5+PwAAAAAt+7o9Se5+PwAAAAAt+7o9Se5+PwAAAAAt+7o9AgVbP5mj5r5KqII+AgVbP5mj5r5KqII+AgVbP5mj5r5KqII+AgVbP5mj5r5KqII+u3T1PgAAAD95skw+jLJMPn2yTD4AAAA/u3T1PoSyTD67dPU+hLJMPnmyTD4AwLg4ebJMPoyyTD63dPU+AMC4OLt09T45+n8/gbJMPtomMz+Gskw+Ofp/P7t09T7aJjM/u3T1PtomMz99skw+AAAAP4GyTD7aJjM/u3T1PgAAAD+Gskw+Ofp/P1i5uDjcJjM/WLm4ODr6fz+Bskw+2iYzP/FN/D46+n8/fHwBPzEFZD/xTfw+MgVkP3x8AT86+n8/0ov1PhD5Rz/bNvw+CgQsP9OL9T4KBCw/2zb8PhD5Rz/Ti/U+fvgrP9s2/D54AxA/0ov1PngDED/bNvw+fvgrP9KL9T6i+WM/2zb8PpwESD/Si/U+nARIP9s2/D6i+WM/1Iv1Pi4FZD/aNvw+Ofp/P9o2/D4uBWQ/0ov1Pjr6fz8AAAEAAgAAAAMAAQAEAAUABgAEAAcABQAIAAkACgAIAAsACQAMAA0ADgAMAA8ADQAQABEAEgATABEAEAAUABUAFgAUABcAFQAYABkAGgAYABsAGQAcAB0AHgAcAB8AHQAgACEAIgAgACMAIQAkACUAJgAnACUAJAA="
+        }
+    ]
+}
