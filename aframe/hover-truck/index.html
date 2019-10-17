@@ -8,7 +8,7 @@
 <body>
     <a-scene>
         <a-assets>
-            <a-mixin id="gen-item" scale="0.2 0.2 0.2" material="envMap: #hdri; envMapIntensity: 1.0" position="0 0 0"></a-mixin>
+            <a-mixin id="gen-item" scale="0.2 0.2 0.2" material="sphericalEnvMap: #hdri; envMapIntensity: 1.0" position="0 0 0"></a-mixin>
             <img id="hdri" src="assets/texture/studio_small_01_8k.jpg"/>
 
             <img id="body-diff" src="assets/texture/truck_diff.png"/>
@@ -42,6 +42,7 @@
         <a-entity mixin="gen-item" material="roughnessMap: #body-rough; src: #body-diff" obj-model="obj: assets/model/body.obj"></a-entity>
         <a-entity mixin="gen-item" material="roughnessMap: #struts-rough; src: #struts-diff; metalness: 1;" obj-model="obj: assets/model/struts.obj"></a-entity>
         <a-entity mixin="gen-item" material="roughnessMap: #movement-rough; src: #movement-diff; metalness: 1; metalnessMap: #movement-metalness;" obj-model="obj: assets/model/movement.obj"></a-entity>
+        <a-entity mixin="gen-item" material="roughnessMap: #rear-rough; src: #rear-diff; metalnessMap: #rear-metalness;" obj-model="obj: assets/model/rear.obj"></a-entity>
 
     </a-scene>
 </body>
