@@ -3,7 +3,11 @@
 <head>
     <title>Hover Truck</title>
     <meta charset="utf-8">
+    <link rel="shortcut icon" type="image/x-icon" href="../../img/favicon.ico">
     <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+
+    <!--camera orbit script from https://github.com/supermedium/superframe/tree/master/components/orbit-controls-->
+    <script src="https://unpkg.com/aframe-orbit-controls@1.2.0/dist/aframe-orbit-controls.min.js"></script>
 </head>
 <body>
     <a-scene>
@@ -37,6 +41,14 @@
             <a-asset-item id="rear" src="assets/model/rear.obj"></a-asset-item>
             <a-asset-item id="equipment" src="assets/model/equipment.obj"></a-asset-item>
         </a-assets>
+
+        <a-entity position="0 0 0">
+            <a-camera
+                look-controls
+                orbit-controls="autoRotate: true; enablePan: false; maxAzimuthAngle: 180; minAzimuthAngle: -180; target: 0 0 0; initialPosition: 0 0.5 -3;"
+                wasd-controls="enabled: false">
+            </a-camera>
+        </a-entity>
 
         <a-sky src="#hdri"></a-sky>
         <a-entity position="-0.96 0.694 -2.224" light="color: #e4e8e9; intensity: 0.44"></a-entity>
