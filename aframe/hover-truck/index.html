@@ -34,9 +34,14 @@
         </a-assets>
 
         <a-sky src="#hdri"></a-sky>
+        <a-entity light="color: #e4e8e9; intensity: 0.44"></a-entity>
+        <a-entity light="intensity: 0.7"></a-entity>
+        <a-entity light="color: #000000; groundColor: #abc0cb; intensity: 0.4; type: hemisphere"></a-entity>
+        <a-entity light="color: #becdcd; type: point"></a-entity>
+
         <a-entity mixin="gen-item" material="roughnessMap: #body-rough; src: #body-diff" obj-model="obj: assets/model/body.obj"></a-entity>
-        <a-entity mixin="gen-item" material="roughnessMap: #struts-rough; src: #struts-diff; metalness: 0.5;" obj-model="obj: assets/model/struts.obj"></a-entity>
-        <a-entity mixin="gen-item" material="roughnessMap: #struts-rough; src: #struts-diff; metalness: 1.0; blending: additive;" obj-model="obj: assets/model/struts.obj"></a-entity>
+        <a-entity mixin="gen-item" material="roughnessMap: #struts-rough; src: #struts-diff; metalness: 0.9;" obj-model="obj: assets/model/struts.obj"></a-entity>
+        <a-entity mixin="gen-item" material="roughnessMap: #movement-rough; src: #movement-diff; metalnessMap: #movement-metalness;" obj-model="obj: assets/model/body.obj"></a-entity>
 
     </a-scene>
 </body>
