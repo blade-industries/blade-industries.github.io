@@ -34,7 +34,7 @@
         </a-assets>
 
         <a-sky src="#hdri"></a-sky>
-        <a-entity obj-model="assets/model/body.obj" material="src: #body-diff; roughness: #body-rough; metalness: 0;"></a-entity>
+        <a-entity mixin="gen-item" material="roughnessMap: #body-rough; src: #body-diff" obj-model="obj: assets/model/body.obj"></a-entity>
 
     </a-scene>
 </body>
