@@ -9,7 +9,7 @@
     <a-scene>
         <a-assets>
             <!--All models and textures by Landon Tubesing, made in Blender 2.80. HDRI image from https://hdrihaven.com/.-->
-            <a-mixin id="gen-item" scale="0.2 0.2 0.2" material="sphericalEnvMap: #hdri; envMapIntensity: 1.0" position="0 0 0"></a-mixin>
+            <a-mixin id="gen-item" scale="0.2 0.2 0.2" material="envMap: #hdri; envMapIntensity: 1.0" position="0 0 0"></a-mixin>
             <img id="hdri" src="assets/texture/studio_small_01_8k.jpg"/>
 
             <img id="body-diff" src="assets/texture/truck_diff.png"/>
@@ -32,6 +32,10 @@
             <img id="struts-rough" src="assets/texture/things_rough.png"/>
 
             <a-asset-item id="body" src="assets/model/body.obj"></a-asset-item>
+            <a-asset-item id="struts" src="assets/model/struts.obj"></a-asset-item>
+            <a-asset-item id="movement" src="assets/model/movement.obj"></a-asset-item>
+            <a-asset-item id="rear" src="assets/model/rear.obj"></a-asset-item>
+            <a-asset-item id="equipment" src="assets/model/equipment.obj"></a-asset-item>
         </a-assets>
 
         <a-sky src="#hdri"></a-sky>
@@ -40,19 +44,19 @@
         <a-entity position="0 0.545 -0.619" light="color: #000000; groundColor: #abc0cb; intensity: 0.4; type: hemisphere"></a-entity>
         <a-entity position="1.469 0.304 2.110" light="color: #becdcd; type: point"></a-entity>
 
-        <a-entity mixin="gen-item" material="roughnessMap: #body-rough; src: #body-diff" obj-model="obj: assets/model/body.obj">
+        <a-entity mixin="gen-item" material="roughnessMap: #body-rough; src: #body-diff" obj-model="obj: #body">
         </a-entity>
 
-        <a-entity mixin="gen-item" material="roughnessMap: #struts-rough; src: #struts-diff; metalness: 1;" obj-model="obj: assets/model/struts.obj">
+        <a-entity mixin="gen-item" material="roughnessMap: #struts-rough; src: #struts-diff; metalness: 1;" obj-model="obj: #struts">
         </a-entity>
 
-        <a-entity mixin="gen-item" material="roughnessMap: #movement-rough; src: #movement-diff; metalness: 1; metalnessMap: #movement-metalness; metalnessMapIntensity: 1.0;" obj-model="obj: assets/model/movement.obj">
+        <a-entity mixin="gen-item" material="roughnessMap: #movement-rough; src: #movement-diff; metalness: 1;" obj-model="obj: #movement">
         </a-entity>
 
-        <a-entity mixin="gen-item" material="roughnessMap: #rear-rough; src: #rear-diff; metalness: 1.0" obj-model="obj: assets/model/rear.obj">
+        <a-entity mixin="gen-item" material="roughnessMap: #rear-rough; src: #rear-diff; metalness: 1.0" obj-model="obj: #rear">
         </a-entity>
 
-        <a-entity mixin="gen-item" material="roughnessMap: #equipment-rough; src: #equipment-diff; metalness: 1.0;" obj-model="obj: assets/model/equipment.obj">
+        <a-entity mixin="gen-item" material="roughnessMap: #equipment-rough; src: #equipment-diff; metalness: 1.0;" obj-model="obj: #equipment">
         </a-entity>
 
     </a-scene>
