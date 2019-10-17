@@ -13,7 +13,7 @@
     <a-scene>
         <a-assets>
             <!--All models and textures by Landon Tubesing, made in Blender 2.80. HDRI image from https://hdrihaven.com/.-->
-            <a-mixin id="gen-item" scale="0.2 0.2 0.2" material="envMap: #hdri; envMapIntensity: 1.0" position="0 0 0"></a-mixin>
+            <a-mixin id="gen-item" scale="0.2 0.2 0.2" material="sphericalEnvMap: #hdri; envMapIntensity: 1.0" position="0 0 0"></a-mixin>
             <img id="hdri" src="assets/texture/studio_small_01_8k.jpg"/>
 
             <img id="body-diff" src="assets/texture/truck_diff.png"/>
@@ -46,7 +46,7 @@
             <a-camera
                 look-controls
                 position="0 0 0"
-                orbit-controls="enablePan: false; target: 0 0 -0.26; initialPosition: 0 0.6 2.5;"
+                orbit-controls="enablePan: false; enableZoom: false; target: 0 0 -0.26; initialPosition: 0 0.6 2.5;"
                 wasd-controls="enabled: false">
             </a-camera>
         </a-entity>
