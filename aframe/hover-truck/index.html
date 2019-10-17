@@ -42,7 +42,7 @@
             <a-asset-item id="equipment" src="assets/model/equipment.obj"></a-asset-item>
         </a-assets>
 
-        <a-entity position="0 0 -0.26" animation="property: rotation; to: 0 360 0; dur: 10000; easing: linear; loop: true;">
+        <a-entity id="camera-rig" position="0 0 -0.26" animation="property: rotation; to: 0 360 0; dur: 10000; easing: linear; loop: true;">
             <a-camera
                 look-controls
                 position="0 0 0"
@@ -56,6 +56,7 @@
         <a-entity position="-1.61 1.875 1.100" light="intensity: 0.7"></a-entity>
         <a-entity position="0 0.545 -0.619" light="color: #000000; groundColor: #abc0cb; intensity: 0.4; type: hemisphere"></a-entity>
         <a-entity position="1.469 0.304 2.110" light="color: #becdcd; type: point"></a-entity>
+        <a-entity position="0 3.063 -5.533" light="color: #aecab3; groundColor: #000000; intensity: 0.23; shadowBias: 0.74; shadowRadius: 2.75"></a-entity>
 
         <a-entity mixin="gen-item" material="roughnessMap: #body-rough; src: #body-diff" obj-model="obj: #body">
         </a-entity>
