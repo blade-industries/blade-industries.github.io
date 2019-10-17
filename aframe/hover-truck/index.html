@@ -45,12 +45,13 @@
         <a-entity position="0 0 -0.26" animation="property: rotation; to: 0 360 0; dur: 10000; easing: linear; loop: true;">
             <a-camera
                 look-controls
-                orbit-controls="enablePan: false; target: 0 0 -0.26; initialPosition: 0 0.1 2;"
+                position="0 0 0"
+                orbit-controls="enablePan: false; target: 0 0 -0.26; initialPosition: 0 0.6 2.5;"
                 wasd-controls="enabled: false">
             </a-camera>
         </a-entity>
 
-        <a-sky src="#hdri"></a-sky>
+        <a-sky src="#hdri" geometry=""></a-sky>
         <a-entity position="-0.96 0.694 -2.224" light="color: #e4e8e9; intensity: 0.44"></a-entity>
         <a-entity position="-1.61 1.875 1.100" light="intensity: 0.7"></a-entity>
         <a-entity position="0 0.545 -0.619" light="color: #000000; groundColor: #abc0cb; intensity: 0.4; type: hemisphere"></a-entity>
