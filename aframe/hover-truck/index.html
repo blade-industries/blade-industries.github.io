@@ -14,6 +14,10 @@
         <a-assets>
             <!--All models and textures by Landon Tubesing, made in Blender 2.80. HDRI image from https://hdrihaven.com/.-->
             <a-mixin id="gen-item" scale="0.2 0.2 0.2" material="sphericalEnvMap: #hdri; envMapIntensity: 1.0" position="0 0 0"></a-mixin>
+            <video id="flame_front" width="512" hight="512"><source src="assets/video/front.avi" type="video/avi"><source src="assets/video/front.ogg" type="video/ogg"></video>
+            <video id="flame_back" width="512" height="512"><source src="assets/video/back.avi" type="video/avi"><source src="assets/video/back.ogg" type="video/ogg"></video>
+
+
             <img id="hdri" src="assets/texture/studio_small_01_8k.jpg"/>
 
             <img id="body-diff" src="assets/texture/truck_diff.png"/>
@@ -40,9 +44,11 @@
             <a-asset-item id="movement" src="assets/model/movement.obj"></a-asset-item>
             <a-asset-item id="rear" src="assets/model/rear.obj"></a-asset-item>
             <a-asset-item id="equipment" src="assets/model/equipment.obj"></a-asset-item>
+            <a-asset-item id="thrust-front" src="assets/model/thrust_front.obj"></a-asset-item>
+            <a-asset-item id="thrust-back" src="assets/model/thrust_back.obj"></a-asset-item>
         </a-assets>
 
-        <a-entity id="camera-rig" position="0 0 -0.26" animation="property: rotation; to: 0 360 0; dur: 10000; easing: linear; loop: true;">
+        <a-entity id="camera-rig" position="0 0 -0.26" animation="property: rotation; to: 0 360 0; dur: 15000; easing: linear; loop: true;">
             <a-camera
                 look-controls
                 position="0 0 0"
@@ -71,6 +77,12 @@
         </a-entity>
 
         <a-entity mixin="gen-item" material="roughnessMap: #equipment-rough; src: #equipment-diff; metalness: 1.0;" obj-model="obj: #equipment">
+        </a-entity>
+
+        <a-entity mixin="gen-item" material="shader: flat; src: #flame_front; blending: additive" obj-model="obj: #thrust-front">
+        </a-entity>
+
+        <a-entity mixin="gen-item" material="shader: flat; src: #flame_back; blending: additive" obj-model="obj: #thrust-back">
         </a-entity>
 
     </a-scene>
