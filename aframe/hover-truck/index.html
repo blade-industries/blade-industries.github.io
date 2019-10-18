@@ -15,13 +15,12 @@
 <body>
     <a-scene>
         <a-assets>
-            <!--All models and textures by Landon Tubesing, made in Blender 2.80. HDRI image from https://hdrihaven.com/.-->
-            <a-mixin id="gen-item" scale="0.2 0.2 0.2" material="sphericalEnvMap: #hdri; envMapIntensity: 1.0" position="0 0 0"></a-mixin>
-
+            <!--All models and textures by Landon Tubesing, made in Blender 2.80. HDRI image from https://hdrihaven.com/-->
             <img id="gif-front" src="assets/texture/front.gif"/>
             <img id="gif-back" src="assets/texture/back.gif"/>
 
             <img id="hdri" src="assets/texture/studio_small_01_8k.jpg"/>
+            <img id="ref-map" src="assets/texture/ref_map.jpg"/>
 
             <img id="body-diff" src="assets/texture/truck_diff.png"/>
             <img id="body-rough" src="assets/texture/truck_rough.png"/>
@@ -45,6 +44,8 @@
             <a-asset-item id="equipment" src="assets/model/equipment.obj"></a-asset-item>
             <a-asset-item id="thrust-front" src="assets/model/thrust_front.obj"></a-asset-item>
             <a-asset-item id="thrust-back" src="assets/model/thrust_back.obj"></a-asset-item>
+
+            <a-mixin id="gen-item" scale="0.2 0.2 0.2" material="sphericalEnvMap: #ref-map; envMapIntensity: 1.0" position="0 0 0"></a-mixin>
         </a-assets>
 
         <a-entity id="camera-rig" position="0 0 -0.26" animation="property: rotation; to: 0 360 0; dur: 15000; easing: linear; loop: true;">
