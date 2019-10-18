@@ -72,7 +72,9 @@
         <a-entity
             id="completeModel"
             mixin="gen-item"
-            animation="property: position; dur: 1000; from: 0 -0.1 0; to: 0 0.1 0; dir: alternate; easing: easeInOutSine; loop: true;">
+            animation="property: position; dur: 1000; from: 0 -0.1 0; to: 0 0.1 0; dir: alternate; easing: easeInOutSine; loop: true;"
+            animation__yaw="property: rotation; dur: 5000; from: 0 -15 0; to: 0 15 0; dir: alternate; easing: easeInOutSine; loop: true;"
+            animation__pitch="property: rotation; dur: 10000; from -10 0 0; to: 10 0 0; dir: alternate; easing: easeInOutSine; loop:true;">
 
             <a-entity material="roughnessMap: #body-rough; src: #body-diff; sphericalEnvMap: #ref-map; envMapIntensity: 1.0" obj-model="obj: #body">
             </a-entity>
