@@ -4,6 +4,7 @@
     <title>Hover Truck</title>
     <meta charset="utf-8">
     <link rel="shortcut icon" type="image/x-icon" href="../../img/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
     <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
 
     <!--camera orbit script from https://github.com/supermedium/superframe/tree/master/components/orbit-controls-->
@@ -87,11 +88,17 @@
             <a-entity material="roughnessMap: #equipment-rough; src: #equipment-diff; metalness: 1.0; sphericalEnvMap: #ref-map; envMapIntensity: 1.0" obj-model="obj: #equipment">
             </a-entity>
 
-            <a-entity material="shader: gif; src: #gif-front; blending: additive" obj-model="obj: #thrust-front">
-            </a-entity>
+            <a-entity id="flame">
+                <a-entity material="shader: gif; src: #gif-front; blending: additive" obj-model="obj: #thrust-front">
+                </a-entity>
 
-            <a-entity material="shader: gif; src: #gif-back; blending: additive" obj-model="obj: #thrust-back">
+                <a-entity material="shader: gif; src: #gif-back; blending: additive" obj-model="obj: #thrust-back">
+                </a-entity>
             </a-entity>
         </a-entity>
     </a-scene>
+    <div id="ToggleButton">
+        <button onclick="toggleThrust()">Toggle Thrusters</button>
+    </div>
 </body>
+</html>
