@@ -45,7 +45,7 @@
             <a-asset-item id="thrust-front" src="assets/model/thrust_front.obj"></a-asset-item>
             <a-asset-item id="thrust-back" src="assets/model/thrust_back.obj"></a-asset-item>
 
-            <a-mixin id="gen-item" scale="0.2 0.2 0.2" material="sphericalEnvMap: #ref-map; envMapIntensity: 1.0" position="0 0 0"></a-mixin>
+            <a-mixin id="gen-item" scale="0.2 0.2 0.2" position="0 0 0"></a-mixin>
         </a-assets>
 
         <a-entity id="camera-rig" position="0 0 -0.26" animation="property: rotation; to: 0 360 0; dur: 15000; easing: linear; loop: true;">
@@ -65,19 +65,19 @@
         <a-entity position="0 3.063 -5.533" light="color: #aecab3; groundColor: #000000; intensity: 0.23; shadowBias: 0.74; shadowRadius: 2.75"></a-entity>
 
         <a-entity id="model" mixin="gen-item">
-            <a-entity material="roughnessMap: #body-rough; src: #body-diff" obj-model="obj: #body">
+            <a-entity material="roughnessMap: #body-rough; src: #body-diff; sphericalEnvMap: #ref-map; envMapIntensity: 1.0" obj-model="obj: #body">
             </a-entity>
 
-            <a-entity material="roughnessMap: #struts-rough; src: #struts-diff; metalness: 1;" obj-model="obj: #struts">
+            <a-entity material="roughnessMap: #struts-rough; src: #struts-diff; metalness: 1; sphericalEnvMap: #ref-map; envMapIntensity: 1.0" obj-model="obj: #struts">
             </a-entity>
 
-            <a-entity material="roughnessMap: #movement-rough; src: #movement-diff; metalness: 1;" obj-model="obj: #movement">
+            <a-entity material="roughnessMap: #movement-rough; src: #movement-diff; metalness: 1; sphericalEnvMap: #ref-map; envMapIntensity: 1.0" obj-model="obj: #movement">
             </a-entity>
 
-            <a-entity material="roughnessMap: #rear-rough; src: #rear-diff; metalness: 1.0" obj-model="obj: #rear">
+            <a-entity material="roughnessMap: #rear-rough; src: #rear-diff; metalness: 1.0; sphericalEnvMap: #ref-map; envMapIntensity: 1.0" obj-model="obj: #rear">
             </a-entity>
 
-            <a-entity material="roughnessMap: #equipment-rough; src: #equipment-diff; metalness: 1.0;" obj-model="obj: #equipment">
+            <a-entity material="roughnessMap: #equipment-rough; src: #equipment-diff; metalness: 1.0; sphericalEnvMap: #ref-map; envMapIntensity: 1.0" obj-model="obj: #equipment">
             </a-entity>
 
             <a-entity material="shader: gif; src: #gif-front; blending: additive" obj-model="obj: #thrust-front">
