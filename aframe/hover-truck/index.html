@@ -50,7 +50,7 @@
             <a-asset-item id="thrust-front" src="assets/model/thrust_front.obj"></a-asset-item>
             <a-asset-item id="thrust-back" src="assets/model/thrust_back.obj"></a-asset-item>
 
-            <a-mixin id="gen-item" scale="0.2 0.2 0.2" position="0 0 0"></a-mixin>
+            <a-mixin id="gen-item" scale="0.2 0.2 0.2"></a-mixin>
         </a-assets>
 
         <a-entity id="camera-rig" position="0 0 -0.26" animation="property: rotation; to: 0 360 0; dur: 15000; easing: linear; loop: true;">
@@ -72,7 +72,7 @@
         <a-entity
             id="completeModel"
             mixin="gen-item"
-            animation="attribute: position; dur: 3000; from: 0 -1 0 to: 0 1 0; direction: alternate-reverse; easing: easeInOutCirc; repeat: indefinite;"">
+            animation="attribute: position; dur: 3000; from: 0 -1 0 to: 0 1 0; dir: alternate; easing: easeInOutCirc; loop: true;">
 
             <a-entity material="roughnessMap: #body-rough; src: #body-diff; sphericalEnvMap: #ref-map; envMapIntensity: 1.0" obj-model="obj: #body">
             </a-entity>
