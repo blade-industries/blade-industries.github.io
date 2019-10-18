@@ -14,8 +14,8 @@
         <a-assets>
             <!--All models and textures by Landon Tubesing, made in Blender 2.80. HDRI image from https://hdrihaven.com/.-->
             <a-mixin id="gen-item" scale="0.2 0.2 0.2" material="sphericalEnvMap: #hdri; envMapIntensity: 1.0" position="0 0 0"></a-mixin>
-            <video id="flame_front" width="512" hight="512"><source src="assets/video/front.avi" type="video/avi"><source src="assets/video/front.ogg" type="video/ogg"></video>
-            <video id="flame_back" width="512" height="512"><source src="assets/video/back.avi" type="video/avi"><source src="assets/video/back.ogg" type="video/ogg"></video>
+            <video id="flame_front" width="512" hight="512" src="assets/video/front.ogg" type="video/ogg" autoplay="true" loop="true"></video>
+            <video id="flame_back" width="512" height="512" src="assets/video/back.ogg" type="video/ogg" autoplay="true" loop="true"></video>
 
 
             <img id="hdri" src="assets/texture/studio_small_01_8k.jpg"/>
@@ -60,26 +60,27 @@
         <a-entity position="1.469 0.304 2.110" light="color: #becdcd; type: point"></a-entity>
         <a-entity position="0 3.063 -5.533" light="color: #aecab3; groundColor: #000000; intensity: 0.23; shadowBias: 0.74; shadowRadius: 2.75"></a-entity>
 
-        <a-entity mixin="gen-item" material="roughnessMap: #body-rough; src: #body-diff" obj-model="obj: #body">
-        </a-entity>
+        <a-entity id="model" mixin="gen-item">
+            <a-entity material="roughnessMap: #body-rough; src: #body-diff" obj-model="obj: #body">
+            </a-entity>
 
-        <a-entity mixin="gen-item" material="roughnessMap: #struts-rough; src: #struts-diff; metalness: 1;" obj-model="obj: #struts">
-        </a-entity>
+            <a-entity material="roughnessMap: #struts-rough; src: #struts-diff; metalness: 1;" obj-model="obj: #struts">
+            </a-entity>
 
-        <a-entity mixin="gen-item" material="roughnessMap: #movement-rough; src: #movement-diff; metalness: 1;" obj-model="obj: #movement">
-        </a-entity>
+            <a-entity material="roughnessMap: #movement-rough; src: #movement-diff; metalness: 1;" obj-model="obj: #movement">
+            </a-entity>
 
-        <a-entity mixin="gen-item" material="roughnessMap: #rear-rough; src: #rear-diff; metalness: 1.0" obj-model="obj: #rear">
-        </a-entity>
+            <a-entity material="roughnessMap: #rear-rough; src: #rear-diff; metalness: 1.0" obj-model="obj: #rear">
+            </a-entity>
 
-        <a-entity mixin="gen-item" material="roughnessMap: #equipment-rough; src: #equipment-diff; metalness: 1.0;" obj-model="obj: #equipment">
-        </a-entity>
+            <a-entity material="roughnessMap: #equipment-rough; src: #equipment-diff; metalness: 1.0;" obj-model="obj: #equipment">
+            </a-entity>
 
-        <a-entity mixin="gen-item" material="shader: flat; src: #flame_front; blending: additive" obj-model="obj: #thrust-front">
-        </a-entity>
+            <a-entity material="shader: flat; src: #flame_front; blending: additive" obj-model="obj: #thrust-front">
+            </a-entity>
 
-        <a-entity mixin="gen-item" material="shader: flat; src: #flame_back; blending: additive" obj-model="obj: #thrust-back">
+            <a-entity material="shader: flat; src: #flame_back; blending: additive" obj-model="obj: #thrust-back">
+            </a-entity>
         </a-entity>
-
     </a-scene>
 </body>
