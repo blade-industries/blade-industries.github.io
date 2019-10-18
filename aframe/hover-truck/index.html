@@ -71,9 +71,9 @@
         <a-entity
             id="completeModel"
             mixin="gen-item"
-            animation__up="property: position; to: 0 1 0; dur: 3500; easing: easeInOutSine; startEvents: document.querySelector('completeModel').animationcomplete__down;"
-            animation__down="property: position; to: 0 -1 0; dur: 3500; easing: easeInOutSine; startEvents: document.querySelector('completeModel').animationcomplete__up;">
-            
+            animation__up="property: position; to: 0 1 0; dur: 3500; easing: easeInOutSine; startEvents: document.querySelector('#completeModel').animationcomplete__down;"
+            animation__down="property: position; to: 0 -1 0; dur: 3500; easing: easeInOutSine; startEvents: document.querySelector('#completeModel').animationcomplete__up;">
+
             <a-entity material="roughnessMap: #body-rough; src: #body-diff; sphericalEnvMap: #ref-map; envMapIntensity: 1.0" obj-model="obj: #body">
             </a-entity>
 
