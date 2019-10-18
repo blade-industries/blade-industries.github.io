@@ -8,15 +8,18 @@
 
     <!--camera orbit script from https://github.com/supermedium/superframe/tree/master/components/orbit-controls-->
     <script src="https://unpkg.com/aframe-orbit-controls@1.2.0/dist/aframe-orbit-controls.min.js"></script>
+
+    <!--GIF shader script from https://github.com/mayognaise/aframe-gif-shader-->
+    <script src="https://rawgit.com/mayognaise/aframe-gif-shader/master/dist/aframe-gif-shader.min.js"></script>
 </head>
 <body>
     <a-scene>
         <a-assets>
             <!--All models and textures by Landon Tubesing, made in Blender 2.80. HDRI image from https://hdrihaven.com/.-->
             <a-mixin id="gen-item" scale="0.2 0.2 0.2" material="sphericalEnvMap: #hdri; envMapIntensity: 1.0" position="0 0 0"></a-mixin>
-            <video id="flame_front" width="512" hight="512" src="assets/video/front.ogg" type="video/ogg" autoplay="true" loop="true"></video>
-            <video id="flame_back" width="512" height="512" src="assets/video/back.ogg" type="video/ogg" autoplay="true" loop="true"></video>
 
+            <img id="gif-front" src="assets/texture/front.gif"/>
+            <img id="gif-back" src="assets/texture/back.gif"/>
 
             <img id="hdri" src="assets/texture/studio_small_01_8k.jpg"/>
 
@@ -76,10 +79,10 @@
             <a-entity material="roughnessMap: #equipment-rough; src: #equipment-diff; metalness: 1.0;" obj-model="obj: #equipment">
             </a-entity>
 
-            <a-entity material="shader: flat; src: #flame_front; blending: additive" obj-model="obj: #thrust-front">
+            <a-entity material="shader: gif; src: #gif-front; blending: additive" obj-model="obj: #thrust-front">
             </a-entity>
 
-            <a-entity material="shader: flat; src: #flame_back; blending: additive" obj-model="obj: #thrust-back">
+            <a-entity material="shader: gif; src: #gif-back; blending: additive" obj-model="obj: #thrust-back">
             </a-entity>
         </a-entity>
     </a-scene>
