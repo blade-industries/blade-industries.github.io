@@ -1,5 +1,10 @@
 <<!DOCTYPE html>
 <html lang="en">
+
+<!--All models and textures by Landon Tubesing, made in Blender 2.80.-->
+<!--HDRI image from https://hdrihaven.com/hdri/?c=studio&h=studio_small_01-->
+<!--Truck is modeled after a Toyota RN80-->
+
 <head>
     <title>Hover Truck</title>
     <meta charset="utf-8">
@@ -20,7 +25,7 @@
 <body>
     <a-scene vr-mode-ui="enabled: false">
         <a-assets>
-            <!--All models and textures by Landon Tubesing, made in Blender 2.80. HDRI image from https://hdrihaven.com/-->
+
             <img id="gif-front" src="assets/texture/front.gif"/>
             <img id="gif-back" src="assets/texture/back.gif"/>
 
@@ -91,11 +96,13 @@
             </a-entity>
 
             <a-entity id="flame">
+
                 <a-entity material="shader: gif; src: #gif-front; blending: additive" obj-model="obj: #thrust-front">
                 </a-entity>
 
                 <a-entity material="shader: gif; src: #gif-back; blending: additive" obj-model="obj: #thrust-back">
                 </a-entity>
+
             </a-entity>
         </a-entity>
     </a-scene>
