@@ -72,6 +72,7 @@
         <a-entity
             id="completeModel"
             mixin="gen-item">
+            <a-animation attribute="position" dur="3000" from="0 -1 0" to="0 1 0" direction="alternate-reverse" easing="ease-in-out-circ" repeat="indefinite"></a-animation>
 
             <a-entity material="roughnessMap: #body-rough; src: #body-diff; sphericalEnvMap: #ref-map; envMapIntensity: 1.0" obj-model="obj: #body">
             </a-entity>
