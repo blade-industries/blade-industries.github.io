@@ -1,10 +1,10 @@
 div.folder-link {
     position: relative;
     padding: 16px 16px 0px 0px;
-    float: left;
+    float: top;
 
     width: 200;
-    height: 120;
+    height: 120px;
     background: url("img/folder_white_sq.png") no-repeat;
 
     color: #000000;
@@ -32,4 +32,3 @@ div.folder-link:hover {
     width: 200;
     height: 120;
 }
-

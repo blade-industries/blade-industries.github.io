@@ -34,7 +34,7 @@ main {
 }
 
 ::selection {
-    background-color: #0000CC;
+    background-color: #0000FF;
 }
 
 ::-webkit-scrollbar {
@@ -69,7 +69,7 @@ a {
 }
 
 .blurb a:hover {
-    background-color: #0000CC;
+    background-color: #0000FF;
     text-decoration: none;
 }
 
@@ -82,11 +82,11 @@ ul {
 li {
     float: left;
     display: block;
-    padding-bottom: 0px;
+    padding-bottom: 16px;
 }
 
 li a:hover {
-    background-color: #0000CC;
+    background-color: #0000FF;
     box-shadow: 0 0 8px #0000AA;
     mix-blend-mode: screen;
 }
@@ -135,7 +135,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 h1 {
-    font-size: 1em;
+    font-size: 1.2em;
     font-weight: normal;
     font-style: normal;
 }
@@ -144,7 +144,7 @@ div.introduction p {
     border-style: solid;
     border-width: 1px;
     border-color: #FFFFFF;
-    
+
     padding: 16px;
     padding-bottom: 4px:
 }
@@ -168,11 +168,12 @@ div.spacer {
 
 h2 {
     position: relative;
-    top: -0.2em;
+    top: 0em;
+    left: 8px;
     color: #000000;
 }
 
 .header-block {
-    height: 0.9em;
+    height: 1.3em;
     background-color: #FFFFFF;
 }
